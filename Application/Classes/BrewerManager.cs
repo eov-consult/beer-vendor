@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.Classes
 {
-    internal class BrewerManager : IBrewerManager
+    public class BrewerManager : IBrewerManager
     {
         private readonly ILogger<BrewerManager> logger;
         private readonly IContext context;

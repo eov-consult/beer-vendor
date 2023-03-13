@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.Classes
 {
-    internal class VendorManager : IVendorManager
+    public class VendorManager : IVendorManager
     {
         private readonly ILogger<VendorManager> logger;
         private readonly IContext context;

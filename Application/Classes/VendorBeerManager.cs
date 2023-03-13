@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Application.Classes
 {
-    internal class VendorBeerManager : IVendorBeerManager
+    public class VendorBeerManager : IVendorBeerManager
     {
         private readonly ILogger<VendorBeerManager> logger;
         private readonly IContext context;

@@ -12,7 +12,7 @@ using System.Xml.Linq;
 
 namespace Infrastructure.Context
 {
-    internal class Context : DbContext, IContext
+    public class Context : DbContext, IContext
     {
         public DbSet<Beer> Beer { get; set; }
 
@@ -24,7 +24,7 @@ namespace Infrastructure.Context
 
         public Context()
         {
-
+            this.Database.EnsureCreated();
         }
         public Context(DbContextOptions options) : base(options)
         {
